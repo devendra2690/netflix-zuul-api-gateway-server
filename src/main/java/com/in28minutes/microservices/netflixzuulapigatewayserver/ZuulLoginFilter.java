@@ -25,8 +25,7 @@ public class ZuulLoginFilter extends ZuulFilter{
 
 		HttpServletRequest httpServletRequest = com.netflix.zuul.context.RequestContext.getCurrentContext().getRequest();
 		
-		logger.info("Request --->"+httpServletRequest);
-		System.out.println("Request --->"+httpServletRequest);
+		logger.info("{}",httpServletRequest);
 		return null;
 	}
 
